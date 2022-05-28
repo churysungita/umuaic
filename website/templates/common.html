@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}home{% endblock title %}
+{% block content  %}
+
+
+{% include "footer.html" %}
+
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootsnav.js' %}"></script>
+<script src="{% static 'js/banner.js' %}"></script>
+<script src="{% static 'js/jquery.swipebox.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        /* Basic Gallery */
+        $('.swipebox').swipebox();
+
+        /* Video */
+        $('.swipebox-video').swipebox();
+
+        /* Dynamic Gallery */
+        $('#gallery').click(function(e) {
+            e.preventDefault();
+            $.swipebox([{
+                href: 'http://swipebox.csag.co/mages/image-1.jpg',
+                title: 'My Caption'
+            }, {
+                href: 'http://swipebox.csag.co/images/image-2.jpg',
+                title: 'My Second Caption'
+            }]);
+        });
+
+    });
+</script>
+<script src="{% static 'js/script.js' %}"></script>
+
+
+{% endblock  content %}
+  

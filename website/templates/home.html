@@ -1,0 +1,274 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Ummu Aymani Islamic Center|UIAC {% endblock title %}home{% block content %}
+
+
+<header>
+    <div class="owl-carousel owl-theme">
+
+        <div class="item">
+            <img src="{% static '/images/header_image.jpg' %}" alt="images not found">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Join with us to help community</h2>
+                        <h1>welcome to join</h1>
+                        <h4>Kusaidia jamii ya watoto wanaoishi katika mazingira magumu ni jukumu letu sote.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="about-sec">
+    <div class="container">
+        <div class="row text-center">
+            <h1>UMMU AYMANI ISLAMIC CENTER (UIAC)</h1>
+            <hr>
+            <h5>Kila sifa njema anastahiki Mwenyezi Mungu mlezi wa viumbe vyote.</h5>
+
+            <p>Kituo hiki cha UMMU AYMANI ISLAMIC CENTER kimeanzishwa na wanawake wa kiislamu walioko mkoa wa Morogoro wilaya ya kilosa katika kijiji cha Dumila juu, kwasababu ni jukumu la kila Mtanzania kumlea na kuwatunza watoto yatima pamoja na watoto
+                wenye mazingira magumu.
+            </p>
+            <p>Kutokana na misingi ya dini ya kiislamu inawataka waislamu kuwatunza na kuwalea watoto yatima wanaoishi katika mazingira hatarishi na magumu,Hivyo kikundi cha wakina mama wa kiislamu wa kijiji cha Dumila juu (Dumila-Kilosa) wameamua kuwatunza
+                na kuwalea watoto yatima, ikiwa na pamoja na kuwapatia elimu ya msinga na sekondari pale uwezo utakapo ruhusu bila kujali jinsia zao wala imani zao kwa kufuata sharia na taratibu za nchi na kuthamini haki za viumbe vyote duniani.</p>
+            <div class="text-center">
+                <a href="{% url 'donate' %}" class="btn1">donate now</a>
+                <a href="{% url 'about' %}" class="btn2">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="activities-sec">
+    <div class="container">
+        <div class="row text-center">
+            <h1>WHAT WE DO?</h1>
+            <hr>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <div class="text-left">
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-content-left"><i class="fa fa-heart"></i></div>
+                    <div class="grid-content-wrapper">
+                        <h4>Charity for Education</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur eget justo quis dignissim.</p>
+                        <a href="{% url 'activities' %}" title="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-content-left"><i class="fa fa-cutlery"></i></div>
+                    <div class="grid-content-wrapper">
+                        <h4>Feed for Hungry Child</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur eget justo quis dignissim.</p>
+                        <a href="{% url 'activities' %}" title="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-content-left"><i class="fa fa-home"></i></div>
+                    <div class="grid-content-wrapper">
+                        <h4>Home for Homeless</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur eget justo quis dignissim.</p>
+                        <a href="{% url 'activities' %}" title="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-content-left"><i class="fa fa-tint"></i></div>
+                    <div class="grid-content-wrapper">
+                        <h4>Bringing Clean Water</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur eget justo quis dignissim.</p>
+                        <a href="{% url 'activities' %}" title="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-content-left"><i class="fa fa-thumbs-up"></i></div>
+                    <div class="grid-content-wrapper">
+                        <h4>Help Little Hands</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur eget justo quis dignissim.</p>
+                        <a href="{% url 'activities' %}" title="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-content-left"><i class="fa fa-money"></i></div>
+                    <div class="grid-content-wrapper">
+                        <h4>Donate for Children</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur eget justo quis dignissim.</p>
+                        <a href="{% url 'activities' %}" title="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="video-sec">
+    <div class="container">
+        <div class="row text-center">
+            <h1>How can you help?</h1>
+            <hr>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <div class="text-left">
+                <div class="col-md-6 clearfix top-off">
+                    <video width="400" controls>
+<source src="{% static 'images/mov_bbb.mp4' %}" type="video/mp4">
+</video>
+                </div>
+                <div class="col-md-6 clearfix top-off">
+                    <div class="media">
+                        <div class="media-image">
+                            <img src="{% static 'images/g1.png' %}" class="attachment-full size-full" alt="g1"> </div>
+                        <div class="media-text">
+                            <h5>BECOME A VOLUNTEER</h5>
+                            <p>Give us a brief description of the service that you are promoting.</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-image">
+                            <img src="{% static 'images/g2.png' %}" class="attachment-full size-full" alt="g1"> </div>
+                        <div class="media-text">
+                            <h5>MAKE A GIFT</h5>
+                            <p>Give us a brief description of the service that you are promoting.</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-image">
+                            <img src="{% static 'images/g1.png' %}" class="attachment-full size-full" alt="g1"> </div>
+                        <div class="media-text">
+                            <h5>GIVE A SCHOLASHIP</h5>
+                            <p>Give us a brief description of the service that you are promoting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects-sec">
+    <div class="container">
+        <div class="row text-center">
+            <h1>OUR PROJECTS</h1>
+            <hr>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <div class="text-center">
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-image"><img src="{% static 'images/community01.png' %}"></div>
+                    <div class="post-content">
+                        <h3>Nepal Earthquake: Clean Water Initiative</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="projects.html" title="">View Project</a>
+                    </div>
+                </div>
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-image"><img src="{% static 'images/donate_01.png' %}"></div>
+                    <div class="post-content">
+                        <h3>Nepal Earthquake: Clean Water Initiative</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="projects.html" title="">View Project</a>
+                    </div>
+                </div>
+                <div class="col-md-4 clearfix top-off">
+                    <div class="grid-image"><img src="{% static 'images/act-bg_01.png' %}"></div>
+                    <div class="post-content">
+                        <h3>Nepal Earthquake: Clean Water Initiative</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="projects.html" title="">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery-sec">
+    <div class="container">
+        <div class="row text-center">
+            <h1>OUR GALLERY</h1>
+            <hr>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <ul class="clearfix">
+
+                <li>
+                    <a href="{% static '/images/act.jpg' %}" class="swipebox" title="My Caption">
+                        <div class="image"><img src="{% static 'images/gallery1.jpg' %}">
+                            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% static 'images/gallery2.jpg' %}" class="swipebox" title="My Caption">
+                        <div class="image"><img src="{% static 'images/gallery2.jpg' %}">
+                            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% static 'images/gallery3.jpg' %}" class="swipebox" title="My Caption">
+                        <div class="image"><img src="{% static 'images/gallery3.jpg' %}">
+                            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% static 'images/gallery4.jpg' %}" class="swipebox" title="My Caption">
+                        <div class="image"><img src="{% static 'images/gallery4.jpg' %}">
+                            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% static 'images/gallery5.jpg' %}" class="swipebox" title="My Caption">
+                        <div class="image"><img src="{% static 'images/gallery5.jpg' %}">
+                            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% static 'images/gallery6.jpg' %}" class="swipebox" title="My Caption">
+                        <div class="image"><img src="{% static 'images/gallery6.jpg' %}">
+                            <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="text-center">
+                <a href="gallery.html" class="btn1">View More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="callout">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Change Their World. Change Yours. This changes everything.</h2>
+                <!-- /.callout-title -->
+            </div>
+            <!-- /.columns large-6 -->
+
+            <div class="col-md-6">
+                <div class="callout-actions">
+                    <a href="contact.html" class="button">Become Volunteer</a>
+
+                    <span class="callout-separator">
+                        <span>Or</span>
+                    </span>
+
+                    <a href="donate.html" class="button">Donate For Cause</a>
+                </div>
+                <!-- /.callout-actions -->
+            </div>
+            <!-- /.columns large-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+</div>
+
+
+{% include "footer.html" %} {% endblock content %}
