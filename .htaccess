@@ -1,0 +1,8 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/sungucbk/umuaic"
+PassengerBaseURI "/"
+PassengerPython "/home/sungucbk/virtualenv/umuaic/3.9/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^dotcomtz\.sungita\.com$
+RewriteRule ^/?$ "https\:\/\/dotcomtz\.xyz\/" [R=301,L]
